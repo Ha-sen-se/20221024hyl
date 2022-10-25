@@ -13,3 +13,9 @@ INSERT INTO BOARD(no, title, content, time_posted, id) VALUES(board_seq.nextval,
 
 select * from board
 
+SELECT * FROM BOARD WHERE TITEL='공부';
+
+SELECT b,no,b.title,b.content
+FROM	community_member m
+INNER JOIN 	board b ON b.id=m.id
+WHERE title IN('공부','제목')
