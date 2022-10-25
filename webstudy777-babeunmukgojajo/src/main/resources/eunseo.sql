@@ -15,5 +15,5 @@ select * from board
 select  b.no, b.title, cm.name, to_char(time_posted, 'yyyy.mm.dd') as time_posted, b.hits
 from BOARD b
 inner join community_member cm on b.id = cm.id
-where b.title in ('공부', '제목');
+where b.title in ('공부', '제목'); 
 
